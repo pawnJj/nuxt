@@ -50,13 +50,16 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-
+  styleResources: {
+    scss: './assets/scss/index.scss',
+    options: {}
+  },
   /*
   ** Build configuration
   */
   build: {
     styleResources: {
-      scss: ['./assets/scss/variable.scss']
+      scss: ['./assets/scss/index.scss']
     },
      // 在页面单文件中使用 scss 
      postcss: [

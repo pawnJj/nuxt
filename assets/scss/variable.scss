@@ -1,15 +1,3 @@
-//颜色定义规范
-$background-color-theme: #3f8e4d;//背景主题颜色默认
-$background-color-theme1: red;//背景主题颜色1
-$background-color-theme2: #652BF5;//背景主题颜色2
-$background-color-theme3: deepskyblue;//背景主题颜色3
- 
-$font-color-theme : #3f8e4d;//字体主题颜色默认
-$font-color-theme1 : red;//字体主题颜色1
-$font-color-theme2 : #652BF5;//字体主题颜色2
-$font-color-theme3 : deepskyblue;//字体主题颜色3
-
-
 // color
 $white: #fff;
 $black: #000000;
@@ -48,4 +36,74 @@ $head: #274156;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+//颜色定义规范
+$background-color-theme: #3f8e4d;//背景主题颜色默认
+$background-color-theme1: red;//背景主题颜色1
+$background-color-theme2: #652BF5;//背景主题颜色2
+$background-color-theme3: deepskyblue;//背景主题颜色3
+ 
+$font-color-theme : #3f8e4d;//字体主题颜色默认
+$font-color-theme1 : red;//字体主题颜色1
+$font-color-theme2 : #652BF5;//字体主题颜色2
+$font-color-theme3 : deepskyblue;//字体主题颜色3
+//顶部背景
+$background-top1:#ffffffcc;
+$background-top2:#333333cc;
+//顶部边框
+$border-top1:#ebebeb;
+$border-top2:#141414;
+@mixin top_bg($color){
+    background-color:$color;
+    [data-theme="theme1"] & {
+        background-color:$background-top1;
+    }
+    [data-theme="theme2"] & {
+        background-color:$background-top2;
+    }
+}
+@mixin top_border($color){
+    box-shadow: 0 0 14px 2px $color;
+    [data-theme="theme1"] & {
+        box-shadow: 0 0 14px 2px $border-top1;
+    }
+    [data-theme="theme2"] & {
+        box-shadow: 0 0 14px 2px $border-top2;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin font_color($color){/*通过该函数设置字体颜色，后期方便统一管理；*/
+	color:$color;
+  [data-theme="theme1"] & {
+    color:$font-color-theme1;
+  }
+  [data-theme="theme2"] & {
+    color:$font-color-theme2;
+  }
+  [data-theme="theme3"] & {
+    color:$font-color-theme3;
+  }
+}
+@mixin bg_color($color){/*通过该函数设置主题颜色，后期方便统一管理；*/
+  background-color:$color;
+  [data-theme="theme1"] & {
+    background-color:$background-color-theme1;
+  }
+  [data-theme="theme2"] & {
+    background-color:$background-color-theme2;
+  }
+  [data-theme="theme3"] & {
+    background-color:$background-color-theme3;
+  }
 }
