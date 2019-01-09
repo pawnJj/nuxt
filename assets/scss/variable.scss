@@ -1,0 +1,51 @@
+//颜色定义规范
+$background-color-theme: #3f8e4d;//背景主题颜色默认
+$background-color-theme1: red;//背景主题颜色1
+$background-color-theme2: #652BF5;//背景主题颜色2
+$background-color-theme3: deepskyblue;//背景主题颜色3
+ 
+$font-color-theme : #3f8e4d;//字体主题颜色默认
+$font-color-theme1 : red;//字体主题颜色1
+$font-color-theme2 : #652BF5;//字体主题颜色2
+$font-color-theme3 : deepskyblue;//字体主题颜色3
+
+
+// color
+$white: #fff;
+$black: #000000;
+$blue: #20A0FF;
+$border-color: #d1d5da;
+
+// width
+$width: 20px;
+
+// padding
+$sm-pad: 0.5rem;
+$normal-pad: 1rem;
+
+//text
+$text: $black;
+$secondary: rgba(0, 0, 0, 0.54);
+$disabled: rgba(0, 0, 0, 0.38);
+$dividers: rgba(0, 0, 0, 0.26);
+
+// font-sisze
+$font-size-base: 14px;
+
+// 主题
+$background:  #D0CCD0;
+$Grayblack: #FBFCFF;
+$brown: #605856;
+$border: #1C6E8C;
+$head: #274156;
+// 字体
+@font-face {
+    font-family: 'webfont';
+    // src: url('./../../font/ZCOOLKuaiLe-Regular.ttf');
+}
+.webFont {
+    font-family: "webfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
