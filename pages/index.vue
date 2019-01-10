@@ -1,13 +1,14 @@
 <template>
-  <section class="container" style="padding-left:150px;">
+  <section class="container">
     <div>
       <!-- <logo/> -->
       <h1 class="title">
-        Blog
+        
       </h1>
+      
+      <div class="aa"></div>
       <p @click="changeTheme('theme1')">11</p>
       <p @click="changeTheme('theme2')">22</p>
-      <div class="aa"></div>
     </div>
   </section>
 </template>
