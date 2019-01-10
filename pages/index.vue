@@ -1,7 +1,7 @@
 <template>
   <section class="container" style="padding-left:150px;">
     <div>
-      <logo/>
+      <!-- <logo/> -->
       <h1 class="title">
         Blog
       </h1>

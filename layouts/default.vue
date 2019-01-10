@@ -1,30 +1,28 @@
 <template>
-  <div class="main">
+  <div class="">
     <div>
       <pc-head/>
     </div>
-    <nuxt/>
+    <template>
+      <background/>
+      
+    </template>
+    <div class="main">
+      <nuxt/>
+    </div>
   </div>
 </template>
 <script>
 import pcHead from '~/components/head/pc'
+import Background from '~/components/background'
 export default {
-    components: { pcHead },
+    components: { pcHead,Background },
     name:''
 }
 </script>
 
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  background: #1a1a1a;
+.main{
+  position: relative;
 }
 </style>
